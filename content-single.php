@@ -20,9 +20,9 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php grace_entry_footer(); ?>
+		<?php sophie_entry_footer(); ?>
 		<div class="entry-meta">
-			<?php grace_posted_on(); ?>
+			<?php sophie_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

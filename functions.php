@@ -14,7 +14,7 @@ if ( ! isset( $content_width ) ) {
 
 if ( ! function_exists( 'sophie_setup' ) ) :
 
-function grace_setup() {
+function sophie_setup() {
 
 	/*
 	 * Make theme available for translation.
@@ -50,7 +50,7 @@ function grace_setup() {
 		'default-image' => '',
 	) ) );
 }
-endif; // grace_setup
+endif; // sophie_setup
 add_action( 'after_setup_theme', 'sophie_setup' );
 
 /**
@@ -58,7 +58,7 @@ add_action( 'after_setup_theme', 'sophie_setup' );
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function grace_widgets_init() {
+function sophie_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'sophie' ),
 		'id'            => 'sidebar-1',
@@ -74,7 +74,7 @@ add_action( 'widgets_init', 'sophie_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function grace_scripts() {
+function sophie_scripts() {
 
 	wp_enqueue_style( 'grace-style', get_stylesheet_uri() );
 

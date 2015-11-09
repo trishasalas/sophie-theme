@@ -29,9 +29,9 @@
 	<footer class="entry-footer">
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<span class="entry-meta">
-				<?php grace_posted_on(); ?>
+				<?php sophie_posted_on(); ?>
 			</span><!-- .entry-meta -->
 		<?php endif; ?>
-		<?php grace_entry_footer(); ?>
+		<?php sophie_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -18,11 +18,11 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses grace_header_style()
- * @uses grace_admin_header_style()
- * @uses grace_admin_header_image()
+ * @uses sophie_header_style()
+ * @uses sophie_admin_header_style()
+ * @uses sophie_admin_header_image()
  */
-function grace_custom_header_setup() {
+function sophie_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'sophie_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
@@ -40,9 +40,9 @@ if ( ! function_exists( 'sophie_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see grace_custom_header_setup().
+ * @see sophie_custom_header_setup().
  */
-function grace_header_style() {
+function sophie_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -75,15 +75,15 @@ function grace_header_style() {
 	</style>
 	<?php
 }
-endif; // grace_header_style
+endif; // sophie_header_style
 
 if ( ! function_exists( 'sophie_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see grace_custom_header_setup().
+ * @see sophie_custom_header_setup().
  */
-function grace_admin_header_style() {
+function sophie_admin_header_style() {
 ?>
 	<style type="text/css">
 		.appearance_page_custom-header #headimg {
@@ -103,15 +103,15 @@ function grace_admin_header_style() {
 	</style>
 <?php
 }
-endif; // grace_admin_header_style
+endif; // sophie_admin_header_style
 
 if ( ! function_exists( 'sophie_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see grace_custom_header_setup().
+ * @see sophie_custom_header_setup().
  */
-function grace_admin_header_image() {
+function sophie_admin_header_image() {
 	$style = sprintf( ' style="color:#%s;"', get_header_textcolor() );
 ?>
 	<div id="headimg">
@@ -123,4 +123,4 @@ function grace_admin_header_image() {
 	</div>
 <?php
 }
-endif; // grace_admin_header_image
+endif; // sophie_admin_header_image

@@ -30,7 +30,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php grace_paging_nav(); ?>
+			<?php sophie_paging_nav(); ?>
 
 		<?php else : ?>
 

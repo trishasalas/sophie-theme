@@ -13,7 +13,7 @@
  * @param array $args Configuration arguments.
  * @return array
  */
-function grace_page_menu_args( $args ) {
+function sophie_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
@@ -25,7 +25,7 @@ add_filter( 'wp_page_menu_args', 'sophie_page_menu_args' );
  * @param array $classes Classes for the body element.
  * @return array
  */
-function grace_body_classes( $classes ) {
+function sophie_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -42,7 +42,7 @@ add_filter( 'body_class', 'sophie_body_classes' );
  * @param string $sep Optional separator.
  * @return string The filtered title.
  */
-function grace_wp_title( $title, $sep ) {
+function sophie_wp_title( $title, $sep ) {
 	if ( is_feed() ) {
 		return $title;
 	}
@@ -79,7 +79,7 @@ add_filter( 'wp_title', 'sophie_wp_title', 10, 2 );
  * @global WP_Query $wp_query WordPress Query object.
  * @return void
  */
-function grace_setup_author() {
+function sophie_setup_author() {
 	global $wp_query;
 
 	if ( $wp_query->is_author() && isset( $wp_query->post ) ) {
