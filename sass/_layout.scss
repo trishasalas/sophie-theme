@@ -1,0 +1,8 @@
+
+.site-header,
+.site-content,
+.site-footer{
+	@include rem(width,1060px);
+	@include rem(padding, 0 25px 0 80px);
+	@include rem(margin, 50px 0 0 0);
+}

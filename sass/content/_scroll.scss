@@ -1,0 +1,29 @@
+
+.ps-container >.ps-scrollbar-x-rail {
+	position: absolute; /* please don't change 'position' */
+	bottom: 0; /* there must be 'bottom' for ps-scrollbar-x-rail */
+	height: 10px;
+	background-color: $gray-chateau;
+}
+
+.ps-container:hover >.ps-scrollbar-x-rail {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.ps-container >.ps-scrollbar-x-rail:hover {
+	background-color: $gray-chateau;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.ps-container >.ps-scrollbar-x-rail.in-scrolling {
+	background-color: $gray-chateau;
+}
+
+.ps-container >.ps-scrollbar-x-rail>.ps-scrollbar-x {
+	position: absolute; /* please don't change 'position' */
+	bottom: 0; /* there must be 'bottom' for ps-scrollbar-x */
+	height: 10px;
+	background-color: $persian-green;
+}

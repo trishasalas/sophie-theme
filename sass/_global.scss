@@ -1,0 +1,32 @@
+html {
+	font-size: 62.5%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	@include rem(font-size, 14px);
+	background: $white;
+	color: $bright-gray;
+	font-family: $font-sans;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+	word-wrap: break-word;
+	border-top-width: 7px;
+	border-top-style: solid;
+	border-color: $bright-gray;
+}
+
+a,
+a:visited {
+	color: $persian-green;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: $surfie-green;
+}

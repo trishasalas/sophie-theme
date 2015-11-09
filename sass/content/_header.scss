@@ -1,0 +1,50 @@
+.site-header {
+	width: 100%;
+	@include rem(max-width,1060px);
+	@include rem(padding, 0 20px 0 80px);
+	@include rem(margin, 50px 0 0 0);
+	@include breakpoint(tablet) {
+		@include rem(padding, 10px);
+		margin:0;
+		text-align: center;
+	}
+	.site-branding,
+	.main-navigation {
+		width: 68.396%;
+		@include breakpoint(tablet) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+
+.horizontal-slider {
+	position: relative;
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	vertical-align: top;
+	height: auto;
+	.gallery-image {
+		display: inline;
+	}
+	img {
+		vertical-align: top;
+		@include breakpoint(tablet) {
+			max-height: 320px;
+		}
+	}
+}
+
+.site-title {
+	@include rem(font-size, 56px);
+	font-family: "Raleway", sans-serif;
+	font-weight: 200;
+	line-height: 1.2;
+	a,
+	a:hover {
+		color: $aluminum;
+	}
+}

@@ -1,0 +1,58 @@
+/*!
+Theme Name: Sophie Theme
+Theme URI: http://trishasalas.com/sophie
+Author: Trisha Salas
+Author URI: http://trishasalas.com
+Description: Hi. I'm the Sophie Theme.</em>.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: grace
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Sophie Theme is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "global";
+@import "typography/typography";
+@import "content/elements/elements";
+@import "content/forms/forms";
+@import "navigation/menus";
+@import "content/modules/accessibility";
+@import "content/modules/alignments";
+@import "content/modules/clearings";
+@import "content/widgets";
+@import "content/content";
+@import "content/footer";
+@import "content/header";
+@import "content/media/media";
+@import "content/scroll";
+
+
+
+#TB_caption {
+	height: 25px !important;
+	padding: 30px !important;
+}
+
+.tb-close-icon:before {
+	font: normal 18px/1 'dashicons' !important;
+}
+
+.tb-close-icon {
+	line-height: 1 !important;
+	width: 17px !important;
+	height: 0 !important;
+	top: 0 !important;
+	right: 0 !important;
+}

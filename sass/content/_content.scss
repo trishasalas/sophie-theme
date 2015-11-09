@@ -1,0 +1,136 @@
+.site-content {
+	width: 100%;
+	@include rem(max-width, 1010px);
+}
+.content-area {
+	width:67%;
+	padding: 0 25px 0 80px;
+	margin: 0 0 45px 0;
+	font-size: 0.750em;
+	float: left;
+	@include breakpoint(tablet) {
+		@include rem(padding, 0 20px);
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+}
+
+.widget-area {
+	float: right;
+	width: 17.822%;
+	@include breakpoint(tablet) {
+		width: 100%;
+		float: none;
+	}
+}
+.entry-title {
+	@include rem(font-size, 28px);
+	@include rem(margin-bottom, 20px);
+	@include rem(padding-bottom, 10px);
+	border-bottom: 1px solid $gray-chateau;
+	font-family: "Raleway", sans-serif;
+	a {
+		color: $gray-chateau;
+	}
+}
+
+.home article,
+.page article {
+	border-bottom-width: 0;
+}
+
+.archive article {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-color: $gray-chateau;
+}
+
+article {
+	header {
+		float: left;
+		width: 100%;
+		h1 {
+			@include rem(font-size, 28px);
+			margin-bottom: 10px;
+			font-weight: normal;
+		}
+	}
+}
+
+.entry-content {
+	h1 {
+		@include rem(font-size, 28px);
+		margin-bottom: 10px;
+		font-weight: normal;
+		color: $gray-chateau;
+	}
+	h2 {
+		@include rem(font-size, 18px);
+		margin-bottom: 10px;
+		font-weight: normal;
+		color: $gray-chateau;
+	}
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	@include rem(margin-bottom, 30px);
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.single,
+.home,
+.blog {
+	.comments-link,
+	.tags-links,
+	.edit-link,
+	.cat-links,
+	.byline {
+		@include rem(padding, 0 10px);
+		border-left: 1px solid $aluminum;
+	}
+
+	.posted-on {
+		@include rem(padding, 0 10px 0 0);
+	}
+}
+
+.bypostauthor {
+	display: block;
+}
+
+.page-title {
+	color: #939598;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 180%;
+	margin-bottom: .75em;
+	padding-bottom: .25em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-color: #939598;
+}

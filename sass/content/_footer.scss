@@ -1,0 +1,13 @@
+.site-footer {
+	@include rem(padding, 30px);
+	background: $white-lilac;
+	width: 100%;
+	.site-info {
+		@include rem(margin-left, 20px);
+		@include rem(font-size, 14px);
+		height: 30px;
+		img {
+			vertical-align: bottom;
+		}
+	}
+}

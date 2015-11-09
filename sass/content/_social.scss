@@ -1,0 +1,155 @@
+// Sharing
+/* #Sharing
+================================================== */
+.sharing {
+	float: none;
+	clear: both;
+	font-size: 0.917em;
+	text-align: left;
+	width: 100%;
+	z-index: 1;
+
+	.share-buttons {
+		position: relative;
+
+		.share-label {
+			display: inline-block;
+			cursor: pointer;
+			line-height: 2;
+			border: none;
+			outline: none;
+		}
+		ul {
+			display: none;
+			padding: 10px 0 0 10px;
+			position: absolute;
+			bottom: 24px;
+			left: 0;
+			right: auto;
+			margin: 0;
+			width: auto;
+			z-index: -500;
+			border-style: solid;
+			border-width: 1px;
+			@include border-radius(4px);
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+
+			li {
+				float: left;
+				margin: 0 10px 10px 0;
+				text-align: center;
+				height: 20px;
+				width: auto;
+				padding: 0;
+				display: inline-block;
+				position: relative;
+
+				a {
+					width: 20px;
+					height: 20px;
+					text-indent: 100%;
+					float: left;
+					display: inline-block;
+					white-space: nowrap;
+					overflow: hidden;
+					background: url('images/share_this.png') no-repeat 0 0;
+					background-size: 20px 140px;
+
+					&:hover {
+						opacity: .7;
+					}
+				}
+
+				&.facebook a {
+					background-position: 0 0;
+				}
+				&.pinterest a {
+					background-position: 0 -20px;
+				}
+				&.twitter a {
+					background-position: 0 -40px;
+				}
+				&.tumblr a {
+					background-position: 0 -60px;
+				}
+				&.linkedin a {
+					background-position: 0 -80px;
+				}
+				&.google a {
+					background-position: 0 -100px;
+				}
+				.touch &.permalink { display: none; }
+				&.permalink { position: static; }
+				&.permalink a {
+					background-position: 0 -120px;
+
+					input {
+						visibility: hidden;
+						width: 100%;
+						padding: 7px;
+						position: absolute;
+						border: none;
+						background-color: #777;
+						@include border-radius(3px);
+						box-shadow: none;
+						color: white;
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						box-sizing: border-box;
+						height: 100%;
+						right: 0;
+						top: 0;
+
+						&:focus {
+							outline: none;
+						}
+					}
+					&:hover {
+						opacity: 1;
+
+						input {
+							visibility: visible;
+						}
+					}
+				}
+
+				.count {
+					float: left;
+					height: 16px;
+					width: auto;
+					padding: 4px 5px 0;
+					line-height: 100%;
+					border-radius: 2px;
+					margin-left: 5px;
+					background-color: rgba(221,221,221,.7);
+					color: black;
+
+					&:before {
+						position: absolute;
+						width: 0px;
+						height: 0px;
+						border-style: solid;
+						border-width: 3px 3px 3px 0;
+						content: "";
+						top: 7px;
+						left: 22px;
+						border-color: transparent rgba(221,221,221,.7) transparent transparent;
+					}
+				}
+			}
+
+			// Retina Version
+			@media (-webkit-min-device-pixel-ratio: 1.5),
+			only screen and (-o-min-device-pixel-ratio: 3/2),
+			only screen and (min-device-pixel-ratio: 1.5) {
+				li a {
+					background: url('images/share_this-2x.png') no-repeat 0 0;
+					background-size: 20px 140px;
+				}
+			}
+		}
+	}
+	&.open ul { display: block; z-index: 500;}
+}
